@@ -1,0 +1,16 @@
+/**
+ * Show Table Css OF Short Link
+ *
+ * This template can be overriden by copying this file to your-theme/betterstudio/table.css
+ *
+ */
+.shortlink_table table {border-collapse: collapse;width: 100%;}
+.shortlink_table th, .shortlink_table td {text-align: center;padding: 8px;}
+.shortlink_table tr:nth-child(even){background-color: #f2f2f2}
+.shortlink_table th {background-color: #4CAF50;color: white;}
+.shortlink_table .pagination ul.page-numbers {display: inline-block;border: 0px !important;list-style: none;width: 100%;font-size: 12px;font-weight: normal;}
+.shortlink_table .prev.page-numbers, .shortlink_table .next.page-numbers { font-size: 16px !important; }
+.shortlink_table .pagination ul.page-numbers li {float: left;}
+.shortlink_table .pagination ul.page-numbers li a, .shortlink_table .pagination ul.page-numbers li span {color: black;float: left;padding: 8px 16px;text-decoration: none;transition: background-color .3s;border: 1px solid #ddd;}
+.shortlink_table .pagination ul.page-numbers li span.current {background-color: #4CAF50;color: white;border: 1px solid #4CAF50;}
+.shortlink_table .pagination ul.page-numbers li a:hover:not(.current) {background-color: #ddd;}

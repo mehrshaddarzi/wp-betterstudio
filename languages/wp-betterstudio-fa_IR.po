@@ -1,0 +1,230 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Wp BetterStusio Test\n"
+"POT-Creation-Date: 2018-10-04 09:51+0330\n"
+"PO-Revision-Date: 2018-10-04 09:52+0330\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wp-betterstudio.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/Admin/MetaBox.php:31
+msgid "URL Setting"
+msgstr "تنظیمات آدرس"
+
+#: includes/Admin/MetaBox.php:37
+msgid "Static Report"
+msgstr "گزارش آمار"
+
+#: includes/Admin/MetaBox.php:62
+msgid "Redirect to"
+msgstr "انتقال به"
+
+#: includes/Admin/MetaBox.php:68 includes/Admin/PostType.php:145
+msgid "Redirect Type"
+msgstr "نوع انتقال"
+
+#: includes/Admin/MetaBox.php:152
+msgid "Total View : "
+msgstr "کل بازدید : "
+
+#: includes/Admin/MetaBox.php:153
+msgid "Unique View : "
+msgstr "بازدید یکتا : "
+
+#: includes/Admin/MetaBox.php:154 includes/Admin/PostType.php:104
+msgid "Real View : "
+msgstr "بازدید واقعی : "
+
+#: includes/Admin/MetaBox.php:155
+msgid "Robot View : "
+msgstr "بازدید ربات : "
+
+#: includes/Admin/MetaBox.php:156
+msgid "Last Viewed : "
+msgstr "آخرین مشاهده : "
+
+#: includes/Admin/PostType.php:31 includes/Admin/PostType.php:32
+#: includes/Front/ShortCode.php:36
+msgid "Link"
+msgstr "لینک"
+
+#: includes/Admin/PostType.php:33 includes/Admin/PostType.php:36
+msgid "New Link"
+msgstr "لینک جدید"
+
+#: includes/Admin/PostType.php:34
+msgid "Add New Link"
+msgstr "افزودن لینک جدید"
+
+#: includes/Admin/PostType.php:35 includes/Admin/PostType.php:200
+#: includes/Admin/PostType.php:340
+msgid "Edit Link"
+msgstr "ویرایش لینک"
+
+#: includes/Admin/PostType.php:37
+msgid "All Links"
+msgstr "تمامی لینک"
+
+#: includes/Admin/PostType.php:38
+msgid "Show Link"
+msgstr "مشاهده لینک"
+
+#: includes/Admin/PostType.php:39
+msgid "Search in Links"
+msgstr "جستجو در لینک ها"
+
+#: includes/Admin/PostType.php:40
+msgid "Not found Any Link"
+msgstr "هیچ لینکی یافت نشد"
+
+#: includes/Admin/PostType.php:41
+msgid "Not found any Link in Trash"
+msgstr "هیچی لینکی در سطل آشعال یافت نشد"
+
+#: includes/Admin/PostType.php:42
+msgid "Parent Links"
+msgstr "لینک پدر"
+
+#: includes/Admin/PostType.php:43 includes/Admin/PostType.php:47
+msgid "ShortLinks"
+msgstr "لینک کوتاه"
+
+#: includes/Admin/PostType.php:98
+msgid "Total : "
+msgstr "کل : "
+
+#: includes/Admin/PostType.php:101
+msgid "Robot View :  "
+msgstr "بازدید ربات : "
+
+#: includes/Admin/PostType.php:150
+msgid "Link Address"
+msgstr "آدرس لینک"
+
+#: includes/Admin/PostType.php:155
+msgid "Redirect To"
+msgstr "انتقال به"
+
+#: includes/Admin/PostType.php:160 includes/Front/ShortCode.php:37
+msgid "Unique View"
+msgstr "بازدید یکتا"
+
+#: includes/Admin/PostType.php:165 includes/Front/ShortCode.php:40
+msgid "Total View"
+msgstr "کل بازدید"
+
+#: includes/Admin/PostType.php:170 includes/Front/ShortCode.php:34
+msgid "Link Name"
+msgstr "نام لینک"
+
+#: includes/Admin/PostType.php:187
+msgid "Please enter the name of the Link"
+msgstr "لطفا نام لینک را وارد کنید"
+
+#: includes/Admin/PostType.php:199
+msgid "Add Link"
+msgstr "افزودن لینک"
+
+#: includes/Admin/Taxonomy.php:30 includes/Admin/Taxonomy.php:40
+#: includes/Front/ShortCode.php:35
+msgid "Link Categories"
+msgstr "دسته بندی لینک"
+
+#: includes/Admin/Taxonomy.php:31
+msgid "Link Cat List"
+msgstr "لیست دسته لینک"
+
+#: includes/Admin/Taxonomy.php:32
+msgid "Search in Link Cat"
+msgstr "جستجو در دسته بندی لینک"
+
+#: includes/Admin/Taxonomy.php:33
+msgid "All Link Cat"
+msgstr "تمامی لینک ها"
+
+#: includes/Admin/Taxonomy.php:34
+msgid "The Link Cat Parent"
+msgstr "دسته لینک مادر"
+
+#: includes/Admin/Taxonomy.php:35
+msgid "Current Link Cat"
+msgstr "لینک کنونی"
+
+#: includes/Admin/Taxonomy.php:36
+msgid "Edit Link Cat"
+msgstr "ویرایش دسته لینک"
+
+#: includes/Admin/Taxonomy.php:37
+msgid "Update Link Cat"
+msgstr "ویرایش دسته لینک"
+
+#: includes/Admin/Taxonomy.php:38
+msgid "Add New Link Cat"
+msgstr "افزودن لینک جدید"
+
+#: includes/Admin/Taxonomy.php:39
+msgid "New Link Cat"
+msgstr "دسته لینک جدید"
+
+#: includes/Front/ShortCode.php:38
+msgid "Real View"
+msgstr "بازدید واقعی"
+
+#: includes/Front/ShortCode.php:39
+msgid "Robots View"
+msgstr "بازدید ربات"
+
+#: includes/Front/ShortCode.php:41
+msgid "Last Viewed"
+msgstr "آخرین مشاهده"
+
+#: includes/Front/ShortCode.php:78
+msgid "View Link"
+msgstr "نمایش لینک"
+
+#: includes/Front/ShortCode.php:211
+msgid "Prev Page"
+msgstr "صفحه قبل"
+
+#: includes/Front/ShortCode.php:212
+msgid "Next Page"
+msgstr "صفحه بعد"
+
+#: includes/Helper/Template.php:65
+msgid "Template Shortlink Not Found"
+msgstr "فایل قالب جدول یافت نشد"
+
+#. Plugin Name of the plugin/theme
+msgid "Wp BetterStusio Test"
+msgstr "تست مهارت برنامه نویسی در BetterStudio"
+
+#. Plugin URI of the plugin/theme
+msgid "https://betterstudio.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A Sample WordPress Plugin For Test My Skill in wordpress developer"
+msgstr ""
+"این یک پلاگین برای تست ارزیابی توسعه دهنده وردپرس در شرکت BetterStudio هست"
+
+#. Author of the plugin/theme
+msgid "Mehrshad Darzi"
+msgstr "مهرشاد درزی"
+
+#. Author URI of the plugin/theme
+msgid "https://realwp.net"
+msgstr ""
