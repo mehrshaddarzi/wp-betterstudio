@@ -160,8 +160,8 @@ class WP_BETTERSTUDIO_TEST
         add_action( 'admin_head-edit.php' , [ \Admin\PostType::get(), 'custom_jquery_table']  );
         add_action( 'pre_get_posts', [\Admin\PostType::get(), 'redirect_type_orderby'] );
         add_filter( 'post_row_actions',  [\Admin\PostType::get(), 'disable_quick_edit'], 10, 2 );
-		//add_filter('bulk_actions-{Screen_id}','my_custom_bulk_actions'); => https://codex.wordpress.org/Plugin_API/Filter_Reference/bulk_actions
-
+	//add_filter('bulk_actions-{Screen_id}','my_custom_bulk_actions'); => https://codex.wordpress.org/Plugin_API/Filter_Reference/bulk_actions
+	//add_filter('default_hidden_meta_boxes','hide_meta_box',10,2); => https://developer.wordpress.org/reference/hooks/default_hidden_meta_boxes || https://gist.github.com/mehrshaddarzi/33cce4cd1c7ffdf2200ccb15e7375de6
 
         /*
          * Flush Rewrite in Not finding Post Type
