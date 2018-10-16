@@ -226,6 +226,8 @@ class PostType
             $query->set('meta_key', 'redirect_type');
             $query->set('orderby', 'meta_value_num');
         }
+        
+        //https://stackoverflow.com/questions/26394593/wordpress-multiple-meta-key-in-pre-get-posts
     }
 
     /*
