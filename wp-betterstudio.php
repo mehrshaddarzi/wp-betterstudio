@@ -162,7 +162,18 @@ class WP_BETTERSTUDIO_TEST
         add_filter( 'post_row_actions',  [\Admin\PostType::get(), 'disable_quick_edit'], 10, 2 );
 	//add_filter('bulk_actions-{Screen_id}','my_custom_bulk_actions'); => https://codex.wordpress.org/Plugin_API/Filter_Reference/bulk_actions
 	//add_filter('default_hidden_meta_boxes','hide_meta_box',10,2); => https://developer.wordpress.org/reference/hooks/default_hidden_meta_boxes || https://gist.github.com/mehrshaddarzi/33cce4cd1c7ffdf2200ccb15e7375de6
-
+	//Add Column for All post type wordpress
+	/*$post_types = (array) get_post_types( array( 'show_ui' => true ), 'object' );
+	foreach ( $post_types as $type ) {
+		add_action( 'manage_' . $type->name . '_posts_columns', 'WP_Statistics_Admin::add_column', 10, 2 );
+		add_action(
+			'manage_' . $type->name . '_posts_custom_column',
+			'WP_Statistics_Admin::render_column',
+			10,
+			2
+		);
+	}*/
+	    
         /*
          * Flush Rewrite in Not finding Post Type
          */
