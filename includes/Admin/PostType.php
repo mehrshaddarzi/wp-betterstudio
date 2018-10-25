@@ -347,5 +347,55 @@ class PostType
             <?php
         }
     }
+    
+    
+    /*
+     * Remove Extra MetaBox
+     */
+    public static function remove_extra_metabox()
+    {
+        global $wp_meta_boxes, $post_type;
+
+        /** Check the post type (remove if you don't want/need) */
+        if(!in_array($post_type, array(
+            self::post_type
+        ))) :
+            return false;
+        endif;
+
+        /** Create an array of meta boxes exceptions, ones that should not be removed (remove if you don't want/need) https://codex.wordpress.org/Function_Reference/remove_meta_box */
+        $exceptions = array(
+            'submitdiv', //Date and Publish meta box
+            //BR_Taxonomy::taxonomy.'div', //Custom Taxonomy For Review Post Type
+        );
+
+        if(!empty($wp_meta_boxes)) : foreach($wp_meta_boxes as $page => $page_boxes) :
+
+            if(!empty($page_boxes)) : foreach($page_boxes as $context => $box_context) :
+
+                if(!empty($box_context)) : foreach($box_context as $box_type) :
+
+                    if(!empty($box_type)) : foreach($box_type as $id => $box) :
+
+                        if(!in_array($id, $exceptions)) :
+                            /** Remove the meta box */
+                            remove_meta_box($id, $page, $context);
+                        endif;
+
+                    endforeach;
+                    endif;
+
+                endforeach;
+                endif;
+
+            endforeach;
+            endif;
+
+        endforeach;
+        endif;
+    }
+    
+    
+    
 
 }
