@@ -155,7 +155,7 @@ class WP_BETTERSTUDIO_TEST
         /*
          * Add Column Shortlink PosType Table
          */
-        add_action( 'manage_posts_custom_column' , [\Admin\PostType::get(), 'column_post_table'] , 10, 2 );
+        add_action( 'manage_'.\WP_BETTERSTUDIO_TEST::post_type.'_posts_custom_column' , [\Admin\PostType::get(), 'column_post_table'] , 10, 2 );
         add_filter('manage_'.\WP_BETTERSTUDIO_TEST::post_type.'_posts_columns' , [\Admin\PostType::get(), 'column_shortlink']);
         add_filter( 'manage_edit-'.\WP_BETTERSTUDIO_TEST::post_type.'_sortable_columns', [\Admin\PostType::get(), 'sortable_column'] );
         add_action( 'admin_head-edit.php' , [ \Admin\PostType::get(), 'custom_jquery_table']  );
