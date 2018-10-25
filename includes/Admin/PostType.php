@@ -138,6 +138,7 @@ class PostType
      */
     public function column_shortlink($columns)
     {
+        //https://wordpress.stackexchange.com/questions/101728/change-the-order-of-columns-for-a-custom-post-type-on-the-admin-list-page
 
         /*
         * Add Redirect Type column
