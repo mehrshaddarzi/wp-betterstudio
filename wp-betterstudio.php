@@ -127,6 +127,7 @@ class WP_BETTERSTUDIO_TEST
          * Create ShortLink Post Type
          */
         add_action( 'init', [\Admin\PostType::get(), 'create_shortlink_post_type'] );
+	add_action('add_meta_boxes', array(\Admin\PostType::get() ,'remove_extra_metabox') , 99, 2); //remove all extra post box
         add_action( 'wp', [\Admin\PostType::get(), 'shortlink_redirect'] );
 
 
