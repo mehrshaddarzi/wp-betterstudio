@@ -187,7 +187,19 @@ class WP_BETTERSTUDIO_TEST
             add_filter( 'enter_title_here', [\Admin\PostType::get(), 'custom_enter_title'] );
             add_filter( 'gettext', [\Admin\PostType::get(), 'change_button_admin'], 10, 2 );
         }
+	    
 
+	    //Add Script only Per Page Admin
+	    /*
+		add_action( 'admin_print_scripts-post-new.php', 'portfolio_admin_script', 11 );
+		add_action( 'admin_print_scripts-post.php', 'portfolio_admin_script', 11 );
+
+		function portfolio_admin_script() {
+		global $post_type;
+		if( 'portfolio' == $post_type )
+		wp_enqueue_script( 'portfolio-admin-script', get_stylesheet_directory_uri() . '/admin.js' );
+		}
+	*/
 
     }
 
