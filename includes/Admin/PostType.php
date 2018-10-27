@@ -228,6 +228,7 @@ class PostType
             $query->set('orderby', 'meta_value_num');
         }
         
+        //https://wpdreamer.com/2014/04/how-to-make-your-wordpress-admin-columns-sortable/
         //https://wordpress.stackexchange.com/questions/159330/custom-taxonomy-custom-sortable-column
         //https://stackoverflow.com/questions/26394593/wordpress-multiple-meta-key-in-pre-get-posts
     }
