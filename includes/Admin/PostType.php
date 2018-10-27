@@ -228,6 +228,7 @@ class PostType
             $query->set('orderby', 'meta_value_num');
         }
         
+        //https://wordpress.stackexchange.com/questions/159330/custom-taxonomy-custom-sortable-column
         //https://stackoverflow.com/questions/26394593/wordpress-multiple-meta-key-in-pre-get-posts
     }
 
