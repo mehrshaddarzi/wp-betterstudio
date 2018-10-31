@@ -177,6 +177,9 @@ class WP_BETTERSTUDIO_TEST
 		);
 	}*/
 	    
+	//Add Meta Box After Table
+	https://wordpress.stackexchange.com/questions/140319/add-content-before-after-admin-post-wp-list-table
+	    
         /*
          * Flush Rewrite in Not finding Post Type
          */
