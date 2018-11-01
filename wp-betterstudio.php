@@ -177,8 +177,56 @@ class WP_BETTERSTUDIO_TEST
 		);
 	}*/
 	    
-	//Add Meta Box After Table
+	//***********************************************Add Meta Box After Table edit.php
 	https://wordpress.stackexchange.com/questions/140319/add-content-before-after-admin-post-wp-list-table
+	    
+	//****************************************************Add content after title field
+	/*function ai_edit_form_after_title() {
+	// get globals vars
+	global $post, $wp_meta_boxes;
+
+	// render the FM meta box in 'ai_after_title' context
+	do_meta_boxes( get_current_screen(), 'ai_after_title', $post );
+
+	// unset 'ai_after_title' context from the post's meta boxes
+	unset( $wp_meta_boxes['post']['ai_after_title'] );
+}
+add_action( 'edit_form_after_title', 'ai_edit_form_after_title' );*/
+	    
+	    //***************************************change post update msg post type
+	    /*
+	    function aa_Tables_messages($messages)
+{
+	$messages[__( 'aa_tables', 'AA_Theme'  )] =
+		array(
+			// Unused. Messages start at index 1
+			0 => '',
+			// Change the message once updated
+			1 => sprintf(__('Table Updated. <a href="%s">View Table</a>', 'AA_Theme' ), esc_url(get_permalink($post_ID))),
+			// Change the message if custom field has been updated
+			2 => __('Custom Field Updated.', 'AA_Theme' ),
+			// Change the message if custom field has been deleted
+			3 => __('Custom Field Deleted.', 'AA_Theme' ),
+			// Change the message once portfolio been updated
+			4 => __('Table Updated.', 'AA_Theme' ),
+			// Change the message during revisions
+			5 => isset($_GET['revision']) ? sprintf( __('Table Restored To Revision From %s', 'AA_Theme' ), wp_post_revision_title((int)$_GET['revision'],false)) : false,
+			// Change the message once published
+			6 => sprintf(__('Table Published. ', 'AA_Theme' ), esc_url(get_permalink($post_ID))),
+			// Change the message when saved
+			7 => __('Table Saved.', 'AA_Theme' ),
+			// Change the message when submitted item
+			8 => sprintf(__('Table Submitted. ', 'AA_Theme' ), esc_url( add_query_arg('preview','true',get_permalink($post_ID)))),
+			// Change the message when a scheduled preview has been made
+			9 => sprintf(__('Table Scheduled For: <strong>%1$s</strong>. ', 'AA_Theme' ),date_i18n( __( 'M j, Y @ G:i' , 'AA_Theme' ),strtotime($post->post_date)), esc_url(get_permalink($post_ID))),
+			// Change the message when draft has been made
+			10 => sprintf(__('Table Draft Updated. ', 'AA_Theme' ), esc_url( add_query_arg('preview','true',get_permalink($post_ID)))),
+		);
+	return $messages;
+} // function: portfolio_messages END
+add_filter('post_updated_messages', 'aa_tables_messages');*/
+	    
+	    
 	    
         /*
          * Flush Rewrite in Not finding Post Type
