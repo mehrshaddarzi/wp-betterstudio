@@ -177,8 +177,13 @@ class WP_BETTERSTUDIO_TEST
 		);
 	}*/
 	    
+	    
 	//***********************************************Add Meta Box After Table edit.php
 	https://wordpress.stackexchange.com/questions/140319/add-content-before-after-admin-post-wp-list-table
+	 
+    	//************************************************add quick edit input
+	https://www.sitepoint.com/extend-the-quick-edit-actions-in-the-wordpress-dashboard/
+	https://codex.wordpress.org/Plugin_API/Action_Reference/quick_edit_custom_box
 	    
 	//****************************************************Add content after title field
 	/*function ai_edit_form_after_title() {
