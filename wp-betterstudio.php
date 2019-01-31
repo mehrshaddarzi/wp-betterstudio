@@ -203,7 +203,8 @@ add_action( 'edit_form_after_title', 'ai_edit_form_after_title' );*/
 	    
 	    //************************************************** Disable Gutenberg in post type
 	    https://stackoverflow.com/questions/52199629/how-to-disable-gutenberg-editor-for-certain-post-types/52199630
-	    add_filter('use_block_editor_for_post_type', 'prefix_disable_gutenberg');
+	    add_filter('gutenberg_can_edit_post_type', 'prefix_disable_gutenberg' 10, 2);
+	    add_filter('use_block_editor_for_post_type', 'prefix_disable_gutenberg' , 10, 2);
 function prefix_disable_gutenberg($current_status, $post_type)
 {
     // Use your post type key instead of 'product'
