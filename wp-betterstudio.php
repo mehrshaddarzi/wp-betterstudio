@@ -248,6 +248,36 @@ function prefix_disable_gutenberg($current_status, $post_type)
 add_filter('post_updated_messages', 'aa_tables_messages');*/
 	    
 	    
+	    // Bulk Message Filter
+	    /**
+ * Filters the bulk action updated messages.
+ *
+ * By default, custom post types use the messages for the 'post' post type.
+ *
+ * @since 3.7.0
+ *
+ * @param array[] $bulk_messages Arrays of messages, each keyed by the corresponding post type. Messages are
+ *                               keyed with 'updated', 'locked', 'deleted', 'trashed', and 'untrashed'.
+ * @param int[]   $bulk_counts   Array of item counts for each message, used to build internationalized strings.
+ */
+$bulk_messages = apply_filters( 'bulk_post_updated_messages', $bulk_messages, $bulk_counts );
+	
+// example Filter 
+$bulk_messages['page']     = array(
+	/* translators: %s: Number of pages. */
+	'updated'   => _n( '%s page updated.', '%s pages updated.', $bulk_counts['updated'] ),
+	'locked'    => ( 1 == $bulk_counts['locked'] ) ? __( '1 page not updated, somebody is editing it.' ) :
+					/* translators: %s: Number of pages. */
+					_n( '%s page not updated, somebody is editing it.', '%s pages not updated, somebody is editing them.', $bulk_counts['locked'] ),
+	/* translators: %s: Number of pages. */
+	'deleted'   => _n( '%s page permanently deleted.', '%s pages permanently deleted.', $bulk_counts['deleted'] ),
+	/* translators: %s: Number of pages. */
+	'trashed'   => _n( '%s page moved to the Trash.', '%s pages moved to the Trash.', $bulk_counts['trashed'] ),
+	/* translators: %s: Number of pages. */
+	'untrashed' => _n( '%s page restored from the Trash.', '%s pages restored from the Trash.', $bulk_counts['untrashed'] ),
+);
+	    
+	    
 	    
         /*
          * Flush Rewrite in Not finding Post Type
